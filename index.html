@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>PulsePoint API Parser</title>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/pulsepoint.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/pulsepoint.css">
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-default">  
+  <div class="container-fluid">
+   <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+     <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+   </div> 
+   <div class="collapse navbar-collapse"  id="main-navbar">
+     <ul class="nav navbar-nav">
+       <li ><a href="http://www.richardsonprogramming.com">RichardsonProgramming</a></li>
+       <li class="active"><a href="#">Data Parser</a></li>
+       <li ><a href="html/video.html">Video Demo</a></li>
+     </ul>
+   </div>
+   </div>
+  </nav>
+
+ <h1>MPC Data Parser</h1>
+  <ol class="breadcrumb">
+  <li><a href="http://www.richardsonprogramming.com">RichardsonProgramming</a></li>
+  <li class="active">Data Parser</li>
+  </ol>
+ 
+<!--<a href = "html/video.html">Video Demo</a> -->
+
+<form id="userForm">
+	Copy the promotion URLS from your spreadsheet and paste them here:
+	<textarea rows="3" cols="40" id="urls"></textarea>
+	<br>
+	Copy the data from the openAPI website and paste it here: <br>
+  (Note that it takes a minute to display what you paste.)
+	<textarea rows="3" cols="40" id="inputText"></textarea>
+	<br>
+	Choose if you want your data broken down into cumulative totals or totals by day, and click "Generate CSV". <br> Your data will be parsed into clicks, impressions, and spend, and returned to you in a CSV file.
+	<br>
+  <br>
+  <input type="radio" name="breakdown" value="cumulative">Cumulative Totals &nbsp;
+  <input type="radio" name="breakdown" value="daily">Daily Totals<br>
+  <br>
+	<button type="button" id="button">Generate CSV</button>
+  
+	<br>
+	<br>
+</form>
+
+
+</body>
+</html>
